@@ -1,6 +1,26 @@
 ---
-
+import UploadForm from "../components/UploadForm.svelte";
 ---
+
+<style>
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 60px
+}
+</style>
 
 <html lang="en">
 	<head>
@@ -11,6 +31,7 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Astro + Pinata</h1>
+		<UploadForm client:load />
 	</body>
 </html>
